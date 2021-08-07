@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+    <title>Calculator</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="screens">
+      <input
+        id="screen"
+        class="screen"
+        type="text"
+        value="0"
+        readonly
+        size="18"
+        id="d"
+      />
+    </div>
+    <br />
+    <div id="outer">
+      <div id="(" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">(</button>
+      </div>
+      <div id=")" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">)</button>
+      </div>
+      <div id="^" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">^</button>
+      </div>
+      <div id="C" class="inner">
+        <button class="button" onclick="clearfunc()" type="button">C</button>
+      </div>
+    </div>
+    <br />
+
+    <div id="outer">
+      <div id="7" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">7</button>
+      </div>
+      <div id="8" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">8</button>
+      </div>
+      <div id="9" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">9</button>
+      </div>
+      <div id="/" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">/</button>
+      </div>
+    </div>
+    <br />
+    <div id="outer">
+      <div id="4" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">4</button>
+      </div>
+      <div id="5" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">5</button>
+      </div>
+      <div id="6" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">6</button>
+      </div>
+      <div id="*" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">*</button>
+      </div>
+    </div>
+    <br />
+    <div id="outer">
+      <div id="1" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">1</button>
+      </div>
+      <div id="2" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">2</button>
+      </div>
+      <div id="3" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">3</button>
+      </div>
+      <div id="-" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">-</button>
+      </div>
+    </div>
+    <br />
+    <div id="outer">
+      <div id="0" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">0</button>
+      </div>
+      <div id="." class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">.</button>
+      </div>
+      <div id="=" class="inner">
+        <button class="button" onclick="equalFunc()" type="button">=</button>
+      </div>
+      <div id="+" class="inner">
+        <button class="button" onclick="myfunc(this)" type="button">+</button>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
